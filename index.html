@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДЕЛЬТА-ИНЖИНИРИНГ – оборудование для вашего бизнеса в Челябинске</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="./img/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/" type="image/png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png" type="image/png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png" type="image/png">
+
+    <link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="./style.css">
+    <!--
+        Укажите свой API-ключ. Тестовый ключ НЕ БУДЕТ работать на других сайтах.
+        Получить ключ можно в Кабинете разработчика: https://developer.tech.yandex.ru/keys/
+    -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=KEY" type="text/javascript"></script>
+    <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
+    <script src="object_manager_filter.js" type="text/javascript"></script>
+    <style>
+        html,
+        body,
+        #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top center">
+            <nav class="nav">
+                <ul class="ul">
+                    <li class="li">
+                        <img class="img" src="./img/icon_city.png" alt="логотип местоположения" class="header-top">
+                        <a href="#" class="link__city">Челябинск</a>
+                    </li>
+                    <li class="li">
+                        <span class="text__header-top">Tел.:</span>
+                        <a href="tel:+73512009316">+7 (351) 200-93-16</a>
+                    </li>
+                    <li class="li">
+                        <span class="text__header-top">Email:</span>
+                        <a href="mailto:chel@deltainzhiniring.ru">chel@deltainzhiniring.ru</a>
+                    </li>
+                    <li class="li">
+                        <img class="img__header-top" src="./img/header_login.png" alt="логотип авторизации">
+                        <a href="#" class="link__city">manager</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__bottom center">
+            <div class="ul">
+                <li class="li">
+                    <a href="https://deltainzhiniring.ru/">
+                        <img src="./img/logo2.png" alt="логотип ДЕЛЬТА-ИНЖИНИРИНГ">
+                    </a>
+                </li>
+                <li class="li">
+                    <a class="text__header-bottom" href="tel:+78002006615">8 (800) 200-66-15</a>
+                </li>
+            </div>
+
+        </div>
+    </header>
+    <main class="center main_menu">
+        <p class="main_menu__item">Поиск города отгрузки</p>
+        <p class="main_menu__item menu_item__left">Выбор группы товаров</p>
+        <p class="main_menu__item">Поиск товара по бренду (hualian, сварог, Schtaer)</p>
+    </main>
+    <div id="map"></div>
+</body>
+
+</html>
