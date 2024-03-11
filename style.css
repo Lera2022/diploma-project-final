@@ -111,3 +111,17 @@ body {
 .hidden {
     visibility: hidden;
 }
+
+@media (max-width: 700px) {
+    .header__top,
+    /* .text__header-bottom, */
+    .main_menu {
+        display: none;
+    }
+}
+
+@media (max-width: 430px) {
+    .text__header-bottom {
+        display: none;
+    }
+}
